@@ -1,22 +1,25 @@
 require './Player'
 require './Question'
 require './Game'
+require './StartGame'
 
 
 player_one = Player.new("Pippa", 3)
 player_two = Player.new("Prairie", 3)
 game = Game.new(player_one, player_two)
+StartGame.new(game)
 
-game.get_question_and_answer
-game.check_response(1)
-puts game.validation_response
-puts game.current_player.lives
+# game.get_question_and_answer
+# game.check_response(1)
+# puts game.validation_response
+# puts game.current_player.lives
 
-game.switch_players
-game.check_response(10)
-puts game.validation_response
-puts game.current_player.lives
-puts game.current_opponent.lives
+# game.switch_players
+# game.check_response(10)
+# puts game.validation_response
+# puts game.current_player.lives
+# puts game.current_opponent.lives
+# puts game.game_is_over
 
 
 # puts game.current_player.user_id
