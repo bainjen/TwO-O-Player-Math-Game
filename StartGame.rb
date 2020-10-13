@@ -7,7 +7,7 @@ class StartGame
   end
 
   def play_game
-    puts "Put in a number"
+    puts "#{game.current_player.user_id} AND #{game.current_opponent.user_id} LET'S PLAY THE MATH GAAAAAAAME!!!! Hey, #{game.current_player.user_id} -- you're up first!"
     while !game.game_is_over
       game.get_question_and_answer
       puts game.question

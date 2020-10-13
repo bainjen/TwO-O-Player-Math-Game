@@ -3,7 +3,6 @@ require "./Question"
 class Game
 
   @@question_instance = Question.new
-  
 
   attr_accessor :current_player, :current_opponent, :answer, :question, :validation_response, :game_is_over
 
@@ -37,7 +36,6 @@ class Game
       @validation_response = "#{current_player.user_id}, you are correct!"
     end
   end
-
-
-
 end
+
+#could wait for both players to go before evaluating a winner -- that way of they both get the same number of questions wrong, they both lose. 
