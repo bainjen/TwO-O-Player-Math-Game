@@ -7,7 +7,8 @@ require './StartGame'
 player_one = Player.new("Pippa", 3)
 player_two = Player.new("Prairie", 3)
 game = Game.new(player_one, player_two)
-StartGame.new(game)
+start = StartGame.new(game)
+start.play_game
 
 # game.get_question_and_answer
 # game.check_response(1)
